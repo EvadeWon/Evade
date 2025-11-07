@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "809728608683",
+    "project_id": "ai-course-generator-aeb6b",
+    "storage_bucket": "ai-course-generator-aeb6b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809728608683:android:27d9196e0bcfbd60b8eaee",
+        "android_client_info": {
+          "package_name": "com.evadewon.evade"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHg6XAcbF1yTXYHd_sOP1Uc2hXZjtuCH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
