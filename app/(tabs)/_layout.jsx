@@ -1,26 +1,45 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
-const tabLayout = () => {
-    return (
-        <Tabs screenOptions={{headerShown:false}}>
-            <Tabs.Screen name='home' options={{
-                tabBarIcon: ({ size, color }) => <Ionicons name="home-outline" size={size} color={color} />,
-                tabBarLabel: "Home"
-            }} />
-            <Tabs.Screen name='explore' options={{
-                tabBarIcon: ({ size, color }) => <Ionicons name="search-outline" size={size} color={color} />,
-                tabBarLabel: "Explore"
-            }} />
-            <Tabs.Screen name='progress' options={{
-                tabBarIcon: ({ size, color }) => <Ionicons name="analytics" size={size} color={color} />,
-                tabBarLabel: "Progress"
-            }} />
-            <Tabs.Screen name='profile' options={{
-                tabBarIcon: ({ size, color }) => <Ionicons name="person-circle-outline" size={size} color={color} />,
-                tabBarLabel: "Profile"
-            }} />
-        </Tabs>
-    )
-}
 
-export default tabLayout;
+export default function Layout() {
+    return (
+        <Tabs screenOptions={{ headerShown: false }}>
+            <Tabs.Screen
+                name="home"
+                options={{
+                    tabBarLabel: 'Home',
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="home-outline" size={size} color={color} />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="explore"
+                options={{
+                    tabBarLabel: 'Explore',
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="search-outline" size={size} color={color} />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="progress"
+                options={{
+                    tabBarLabel: 'Progress',
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="analytics-outline" size={size} color={color} />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="profile"
+                options={{
+                    tabBarLabel: 'Profile',
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="person-circle-outline" size={size} color={color} />
+                    ),
+                }}
+            />
+        </Tabs>
+    );
+}

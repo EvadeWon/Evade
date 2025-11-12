@@ -1,6 +1,6 @@
 import { Text, View } from 'react-native'
 
-const progress = () => {
+const Progress = () => {
     return (
         <View>
             <Text>progress</Text>
@@ -8,4 +8,4 @@ const progress = () => {
     )
 }
 
-export default progress
+export default Progress
